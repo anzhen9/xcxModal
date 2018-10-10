@@ -1,0 +1,12 @@
+<view class="modal-parent" wx:if="{{detail.title || detail.subtitle}}">
+  <view class="modal-block">
+    <view class="modal-title" wx:if="{{detail.title}}">{{detail.title}}</view>
+    <view class="modal-subtitle" wx:if="{{detail.subtitle}}">
+      <text wx:for="{{text}}" wx:key="{{this}}" style="{{item.style >= 0?specStr[item.style].style:''}}">{{item.style >= 0?specStr[item.style].text:item.value}}</text>
+    </view>
+    <view class="modal-btns {{!detail.showCancel||!detail.showConfirm ? 'center' : ''}}">
+      <view style="{{detail.cancelStyle}}" class="btn cancel {{!detail.showCancel||!detail.showConfirm ? 'big' : ''}}" wx:if="{{detail.showCancel}}" catchtap="tapBtn" data-flag="cancel">{{detail.cancelText}}</view>
+      <view style="{{detail.confirmStyle}}" class="btn confirm {{!detail.showCancel||!detail.showConfirm ? 'big' : ''}}" wx:if="{{detail.showConfirm}}" catchtap="tapBtn" data-flag="confirm">{{detail.confirmText}}</view>
+    </view>
+  </view>
+</view>

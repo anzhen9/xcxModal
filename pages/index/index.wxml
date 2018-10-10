@@ -1,0 +1,55 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="tips">modal标题与内容两者必须存在一个，否则弹窗不显示</view>
+  <view class="toast-field">
+    <view style="width:100%;">提示标题：</view>
+    <view class="tips">modal标题，可为空</view>
+    <input bindinput="changeTitle"></input>
+  </view>
+  <view class="toast-field">
+    <view style="width:100%;">提示内容（副标题）：</view>
+    <view class="tips">modal内容，可为空，若要定制某一部分文字样式则需要用花括号将要改变样式的文字括起来，括号内样式与内容用竖线分隔，样式采用css样式，如下：</view>
+    <view class="tips">内容{color:#f00;|我是红色}，{color:#0f0|我是绿色}，{background:#00f|我的背景是蓝色}内容</view>
+    <input bindinput="changeSubTitle"></input>
+  </view>
+  <view class="toast-field">
+    <view style="width:100%;">是否显示取消按钮：</view>
+    <view class="tips">默认显示</view>
+    <switch bindchange="changeCancel" checked='{{modalTemp.showCancel}}'></switch>
+  </view>
+  <view class="toast-field">
+    <view style="width:100%;">是否显示确认按钮：</view>
+    <view class="tips">默认显示</view>
+    <switch bindchange="changeConfirm" checked='{{modalTemp.showConfirm}}'></switch>
+  </view>
+  <view class="toast-field">
+    <view style="width:100%;">取消按钮文字：</view>
+    <view class="tips">默认为 取消</view>
+    <input bindinput="changeCancelText"></input>
+  </view>
+  <view class="toast-field">
+    <view style="width:100%;">确认按钮文字：</view>
+    <view class="tips">默认为 确认</view>
+    <input bindinput="changeConfirmText"></input>
+  </view>
+  <view class="toast-field">
+    <view style="width:100%;">取消按钮样式：</view>
+    <view class="tips">使用css样式写法，如color:#f00</view>
+    <input bindinput="changeCancelStyle"></input>
+  </view>
+  <view class="toast-field">
+    <view style="width:100%;">确认按钮样式：</view>
+    <view class="tips">使用css样式写法，如color:#f00</view>
+    <input bindinput="changeConfirmStyle"></input>
+  </view>
+  <view class="toast-field">
+    <view style="width:100%;">点击后执行</view>
+    <view class="tips">此处以在控制台打印文字为例</view>
+    <switch bindchange="changeComplete"></switch>
+  </view>
+  <view class="toast-field">
+    <button catchtap="showModal">显示</button>
+  </view>
+</view>
+
+<modal detail="{{modal}}"></modal>

@@ -1,0 +1,77 @@
+.modal-parent{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top:0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index:999999999;
+  background: rgba(0, 0, 0, 0.6);
+}
+.modal-block{
+  width: 580rpx;
+  background: #ffffff;
+	box-shadow: 0px 0px 12rpx 0px rgba(62, 73, 103, 0.1);
+	border-radius: 10rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60rpx 30rpx;
+}
+.modal-title{
+  font-size: 38rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+	color: #393c48;
+}
+.modal-subtitle{
+  width: 100%;
+  padding: 30rpx 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.modal-subtitle>text{
+  font-size:28rpx;
+  color:#707580;
+}
+.modal-btns{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20rpx;
+}
+.modal-btns.center{
+  justify-content: center;
+}
+.btn{
+  width: 236rpx;
+	text-align: center;
+  margin: 0 20rpx;
+  flex-shrink: 0;
+  background: #fff;
+  padding: 0;
+  font-size: 28rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  border-radius: 10rpx;
+}
+.btn.cancel{
+  color:#666;
+  background: #f2f2f2;
+  border:1rpx solid #b2b2b2;
+}
+.btn.confirm{
+  color:#fff;
+  background: #09bb07;
+  border:1rpx solid #03a501;
+}
+.btn.big{
+  width: 511rpx;
+}
