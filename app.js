@@ -6,7 +6,7 @@ App({
   globalData: {
     userInfo: null
   },
-  showModal: function (param, callback) {
+  showModal: function (param) {
     var pages = getCurrentPages();
     var currentPage = pages[pages.length - 1];
     var modal = {
@@ -20,14 +20,8 @@ App({
       confirmStyle: param.confirmStyle || '',
       complete: param.complete || function (e) { return e }
     };
-    if (typeof callback == 'function') {
-      currentPage.setData({
-        modal: modal
-      }, callback);
-    } else {
-      currentPage.setData({
-        modal: modal
-      });
-    }
+    currentPage.setData({
+      modal: modal
+    });
   },
 })
