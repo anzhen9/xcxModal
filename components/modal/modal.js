@@ -46,10 +46,14 @@ Component({
           text = text.split('\\_');
           var texts = [];
           for(var j in text){
+
             let item = text[j].split('\\');
             let textObj = { style: -1, value: item[0] };
-            if(item.length == 2) textObj.style = item[1]
             texts = texts.concat(textObj);
+            if(item.length == 2) {
+              let textObj = { style: item[1], value: item[0] };
+              texts = texts.concat(textObj);
+            }
           }
           this.setData({
             text: texts,

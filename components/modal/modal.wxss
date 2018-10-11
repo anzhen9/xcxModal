@@ -29,13 +29,13 @@
 	letter-spacing: 0px;
 	color: #393c48;
 }
+.modal-custom{
+  width: 100%;
+  padding: 20rpx 0;
+}
 .modal-subtitle{
   width: 100%;
   padding: 30rpx 0;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  flex-wrap: wrap;
 }
 .modal-subtitle>text{
   font-size:28rpx;

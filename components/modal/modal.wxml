@@ -1,6 +1,9 @@
 <view class="modal-parent" wx:if="{{detail.title || detail.subtitle}}">
   <view class="modal-block">
     <view class="modal-title" wx:if="{{detail.title}}">{{detail.title}}</view>
+    <view class="modal-custom">
+      <slot></slot>
+    </view>
     <view class="modal-subtitle" wx:if="{{detail.subtitle}}">
       <text wx:for="{{text}}" wx:key="{{this}}" style="{{item.style >= 0?specStr[item.style].style:''}}">{{item.style >= 0?specStr[item.style].text:item.value}}</text>
     </view>

@@ -52,4 +52,6 @@
   </view>
 </view>
 
-<modal detail="{{modal}}"></modal>
+<modal detail="{{modal}}">
+  <image style="width:100rpx;height:100rpx;" src="http://static.wexiaocheng.com/xcx/moban/2018-09-25/2c4d4f05da35e68ea68e3b5c1d74ab82.jpg"></image>
+</modal>

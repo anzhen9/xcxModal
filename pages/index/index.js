@@ -3,8 +3,8 @@ const app = getApp()
 Page({
   data: {
     modalTemp: {
-      title: '',
-      subtitle: '',
+      title: '111',
+      subtitle: '{color:#f00|jaja}哈哈哈{color:#ff0|jaja}{color:#f00|jaja}哈哈哈{color:#f0f|jaja}',
       showCancel: true,
       showConfirm: true,
       cancelText: '取消',
