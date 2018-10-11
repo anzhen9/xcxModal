@@ -34,7 +34,6 @@
   padding: 20rpx 0;
 }
 .modal-subtitle{
-  width: 100%;
   padding: 30rpx 0;
 }
 .modal-subtitle>text{
