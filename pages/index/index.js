@@ -87,6 +87,13 @@ Page({
       modalTemp: modalTemp
     })
   },
+  changeSlot(e){
+    var modalTemp = this.data.modalTemp;
+    modalTemp.showSlot = e.detail.value;
+    this.setData({
+      modalTemp: modalTemp
+    })
+  },
   showModal(){
     app.showModal(this.data.modalTemp)
   }

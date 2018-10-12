@@ -48,10 +48,15 @@
     <switch bindchange="changeComplete"></switch>
   </view>
   <view class="toast-field">
+    <view style="width:100%;">添加slot</view>
+    <view class="tips">添加图片为例</view>
+    <switch bindchange="changeSlot"></switch>
+  </view>
+  <view class="toast-field">
     <button catchtap="showModal">显示</button>
   </view>
 </view>
 
 <modal detail="{{modal}}">
-  <image style="width:100rpx;height:100rpx;" src="http://static.wexiaocheng.com/xcx/moban/2018-09-25/2c4d4f05da35e68ea68e3b5c1d74ab82.jpg"></image>
+  <image wx:if="{{modalTemp.showSlot}}" style="width:100rpx;height:100rpx;margin:auto;display:block;" src="/images/demo.gif"></image>
 </modal>

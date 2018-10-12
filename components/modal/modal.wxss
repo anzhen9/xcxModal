@@ -31,7 +31,6 @@
 }
 .modal-custom{
   width: 100%;
-  padding: 20rpx 0;
 }
 .modal-subtitle{
   padding: 30rpx 0;

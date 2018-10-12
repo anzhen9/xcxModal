@@ -87,6 +87,13 @@ app.showModal({
 });
 },
 ```
+这里是图<br>
+普通显示：<br>
+![normal](/docs/normal.png)<br>
+subtitle带样式：<br>
+![subtitle with style](/docs/subtitle with style.png)<br>
+添加slot：<br>
+![show slot](/docs/show slot.png)<br>
 其中subtitle可以自定义样式，写法格式灵感来源于echarts，不过也有不同<br>
 整体就是个字符串，把需要改变样式部分用{}包起来，{}里样式与内容用|分开，前面写样式，后面些内容就成了下边的格式<br>
 内容{样式|内容}内容<br>
